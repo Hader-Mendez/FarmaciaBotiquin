@@ -58,6 +58,7 @@
     <Compile Include="Clases\Login.cs" />
     <Compile Include="Clases\Empleado.cs" />
     <Compile Include="Clases\Puesto.cs" />
+    <Compile Include="Clases\Validaciones.cs" />
     <Compile Include="FrmCliente.cs">
       <SubType>Form</SubType>
     </Compile>
