@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPrincipal));
             this.pnPrincial = new System.Windows.Forms.Panel();
             this.pbLogo = new System.Windows.Forms.PictureBox();
-            this.pbCerrar = new System.Windows.Forms.PictureBox();
+            this.pbCerrarPrinci = new System.Windows.Forms.PictureBox();
             this.pnContenedor = new System.Windows.Forms.Panel();
             this.lbProducto = new System.Windows.Forms.Label();
             this.lbUsuario = new System.Windows.Forms.Label();
@@ -49,7 +49,7 @@
             this.pbCliente = new System.Windows.Forms.PictureBox();
             this.pnPrincial.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCerrarPrinci)).BeginInit();
             this.pnContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUsuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFactura)).BeginInit();
@@ -64,33 +64,36 @@
             // 
             this.pnPrincial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(97)))), ((int)(((byte)(112)))));
             this.pnPrincial.Controls.Add(this.pbLogo);
-            this.pnPrincial.Controls.Add(this.pbCerrar);
+            this.pnPrincial.Controls.Add(this.pbCerrarPrinci);
             this.pnPrincial.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnPrincial.Location = new System.Drawing.Point(0, 0);
+            this.pnPrincial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnPrincial.Name = "pnPrincial";
-            this.pnPrincial.Size = new System.Drawing.Size(1088, 113);
+            this.pnPrincial.Size = new System.Drawing.Size(816, 92);
             this.pnPrincial.TabIndex = 0;
             // 
             // pbLogo
             // 
             this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
             this.pbLogo.Location = new System.Drawing.Point(0, 0);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(213, 110);
+            this.pbLogo.Size = new System.Drawing.Size(160, 89);
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbLogo.TabIndex = 1;
             this.pbLogo.TabStop = false;
             // 
-            // pbCerrar
+            // pbCerrarPrinci
             // 
-            this.pbCerrar.Image = ((System.Drawing.Image)(resources.GetObject("pbCerrar.Image")));
-            this.pbCerrar.Location = new System.Drawing.Point(994, 12);
-            this.pbCerrar.Name = "pbCerrar";
-            this.pbCerrar.Size = new System.Drawing.Size(82, 82);
-            this.pbCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbCerrar.TabIndex = 0;
-            this.pbCerrar.TabStop = false;
-            this.pbCerrar.Click += new System.EventHandler(this.pbCerrar_Click);
+            this.pbCerrarPrinci.Image = ((System.Drawing.Image)(resources.GetObject("pbCerrarPrinci.Image")));
+            this.pbCerrarPrinci.Location = new System.Drawing.Point(746, 10);
+            this.pbCerrarPrinci.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbCerrarPrinci.Name = "pbCerrarPrinci";
+            this.pbCerrarPrinci.Size = new System.Drawing.Size(62, 67);
+            this.pbCerrarPrinci.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbCerrarPrinci.TabIndex = 0;
+            this.pbCerrarPrinci.TabStop = false;
+            this.pbCerrarPrinci.Click += new System.EventHandler(this.pbCerrarPrinci_Click);
             // 
             // pnContenedor
             // 
@@ -110,9 +113,10 @@
             this.pnContenedor.Controls.Add(this.pbEmpleado);
             this.pnContenedor.Controls.Add(this.pbCliente);
             this.pnContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnContenedor.Location = new System.Drawing.Point(0, 113);
+            this.pnContenedor.Location = new System.Drawing.Point(0, 92);
+            this.pnContenedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnContenedor.Name = "pnContenedor";
-            this.pnContenedor.Size = new System.Drawing.Size(1088, 637);
+            this.pnContenedor.Size = new System.Drawing.Size(816, 517);
             this.pnContenedor.TabIndex = 1;
             // 
             // lbProducto
@@ -120,9 +124,10 @@
             this.lbProducto.AutoSize = true;
             this.lbProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbProducto.ForeColor = System.Drawing.Color.White;
-            this.lbProducto.Location = new System.Drawing.Point(594, 279);
+            this.lbProducto.Location = new System.Drawing.Point(446, 227);
+            this.lbProducto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbProducto.Name = "lbProducto";
-            this.lbProducto.Size = new System.Drawing.Size(118, 29);
+            this.lbProducto.Size = new System.Drawing.Size(94, 24);
             this.lbProducto.TabIndex = 36;
             this.lbProducto.Text = "Producto";
             // 
@@ -131,9 +136,10 @@
             this.lbUsuario.AutoSize = true;
             this.lbUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUsuario.ForeColor = System.Drawing.Color.White;
-            this.lbUsuario.Location = new System.Drawing.Point(816, 279);
+            this.lbUsuario.Location = new System.Drawing.Point(612, 227);
+            this.lbUsuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbUsuario.Name = "lbUsuario";
-            this.lbUsuario.Size = new System.Drawing.Size(103, 29);
+            this.lbUsuario.Size = new System.Drawing.Size(81, 24);
             this.lbUsuario.TabIndex = 35;
             this.lbUsuario.Text = "Usuario";
             // 
@@ -142,9 +148,10 @@
             this.lbPuesto.AutoSize = true;
             this.lbPuesto.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPuesto.ForeColor = System.Drawing.Color.White;
-            this.lbPuesto.Location = new System.Drawing.Point(708, 482);
+            this.lbPuesto.Location = new System.Drawing.Point(531, 392);
+            this.lbPuesto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbPuesto.Name = "lbPuesto";
-            this.lbPuesto.Size = new System.Drawing.Size(94, 29);
+            this.lbPuesto.Size = new System.Drawing.Size(74, 24);
             this.lbPuesto.TabIndex = 34;
             this.lbPuesto.Text = "Puesto";
             // 
@@ -153,9 +160,10 @@
             this.lbFactura.AutoSize = true;
             this.lbFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbFactura.ForeColor = System.Drawing.Color.White;
-            this.lbFactura.Location = new System.Drawing.Point(487, 482);
+            this.lbFactura.Location = new System.Drawing.Point(365, 392);
+            this.lbFactura.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbFactura.Name = "lbFactura";
-            this.lbFactura.Size = new System.Drawing.Size(100, 29);
+            this.lbFactura.Size = new System.Drawing.Size(80, 24);
             this.lbFactura.TabIndex = 33;
             this.lbFactura.Text = "Factura";
             // 
@@ -164,9 +172,10 @@
             this.lbProveedor.AutoSize = true;
             this.lbProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbProveedor.ForeColor = System.Drawing.Color.White;
-            this.lbProveedor.Location = new System.Drawing.Point(262, 482);
+            this.lbProveedor.Location = new System.Drawing.Point(196, 392);
+            this.lbProveedor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbProveedor.Name = "lbProveedor";
-            this.lbProveedor.Size = new System.Drawing.Size(135, 29);
+            this.lbProveedor.Size = new System.Drawing.Size(107, 24);
             this.lbProveedor.TabIndex = 32;
             this.lbProveedor.Text = "Proveedor";
             // 
@@ -175,9 +184,10 @@
             this.lbEmpleado.AutoSize = true;
             this.lbEmpleado.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbEmpleado.ForeColor = System.Drawing.Color.White;
-            this.lbEmpleado.Location = new System.Drawing.Point(376, 279);
+            this.lbEmpleado.Location = new System.Drawing.Point(282, 227);
+            this.lbEmpleado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbEmpleado.Name = "lbEmpleado";
-            this.lbEmpleado.Size = new System.Drawing.Size(132, 29);
+            this.lbEmpleado.Size = new System.Drawing.Size(105, 24);
             this.lbEmpleado.TabIndex = 31;
             this.lbEmpleado.Text = "Empleado";
             // 
@@ -186,9 +196,10 @@
             this.lbCliente.AutoSize = true;
             this.lbCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCliente.ForeColor = System.Drawing.Color.White;
-            this.lbCliente.Location = new System.Drawing.Point(171, 279);
+            this.lbCliente.Location = new System.Drawing.Point(128, 227);
+            this.lbCliente.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbCliente.Name = "lbCliente";
-            this.lbCliente.Size = new System.Drawing.Size(109, 29);
+            this.lbCliente.Size = new System.Drawing.Size(85, 24);
             this.lbCliente.TabIndex = 30;
             this.lbCliente.Text = "Clientes";
             // 
@@ -196,9 +207,10 @@
             // 
             this.pbUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(97)))), ((int)(((byte)(112)))));
             this.pbUsuario.Image = ((System.Drawing.Image)(resources.GetObject("pbUsuario.Image")));
-            this.pbUsuario.Location = new System.Drawing.Point(791, 125);
+            this.pbUsuario.Location = new System.Drawing.Point(593, 102);
+            this.pbUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbUsuario.Name = "pbUsuario";
-            this.pbUsuario.Size = new System.Drawing.Size(146, 151);
+            this.pbUsuario.Size = new System.Drawing.Size(110, 123);
             this.pbUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbUsuario.TabIndex = 29;
             this.pbUsuario.TabStop = false;
@@ -208,9 +220,10 @@
             // 
             this.pbFactura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(97)))), ((int)(((byte)(112)))));
             this.pbFactura.Image = ((System.Drawing.Image)(resources.GetObject("pbFactura.Image")));
-            this.pbFactura.Location = new System.Drawing.Point(465, 328);
+            this.pbFactura.Location = new System.Drawing.Point(349, 266);
+            this.pbFactura.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbFactura.Name = "pbFactura";
-            this.pbFactura.Size = new System.Drawing.Size(146, 151);
+            this.pbFactura.Size = new System.Drawing.Size(110, 123);
             this.pbFactura.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbFactura.TabIndex = 28;
             this.pbFactura.TabStop = false;
@@ -220,9 +233,10 @@
             // 
             this.pbProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(97)))), ((int)(((byte)(112)))));
             this.pbProveedor.Image = ((System.Drawing.Image)(resources.GetObject("pbProveedor.Image")));
-            this.pbProveedor.Location = new System.Drawing.Point(256, 328);
+            this.pbProveedor.Location = new System.Drawing.Point(192, 266);
+            this.pbProveedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbProveedor.Name = "pbProveedor";
-            this.pbProveedor.Size = new System.Drawing.Size(146, 151);
+            this.pbProveedor.Size = new System.Drawing.Size(110, 123);
             this.pbProveedor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbProveedor.TabIndex = 27;
             this.pbProveedor.TabStop = false;
@@ -232,9 +246,10 @@
             // 
             this.pcFactura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(97)))), ((int)(((byte)(112)))));
             this.pcFactura.Image = ((System.Drawing.Image)(resources.GetObject("pcFactura.Image")));
-            this.pcFactura.Location = new System.Drawing.Point(682, 328);
+            this.pcFactura.Location = new System.Drawing.Point(512, 266);
+            this.pcFactura.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pcFactura.Name = "pcFactura";
-            this.pcFactura.Size = new System.Drawing.Size(146, 151);
+            this.pcFactura.Size = new System.Drawing.Size(110, 123);
             this.pcFactura.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcFactura.TabIndex = 26;
             this.pcFactura.TabStop = false;
@@ -244,9 +259,10 @@
             // 
             this.pbProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(97)))), ((int)(((byte)(112)))));
             this.pbProducto.Image = ((System.Drawing.Image)(resources.GetObject("pbProducto.Image")));
-            this.pbProducto.Location = new System.Drawing.Point(577, 125);
+            this.pbProducto.Location = new System.Drawing.Point(433, 102);
+            this.pbProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbProducto.Name = "pbProducto";
-            this.pbProducto.Size = new System.Drawing.Size(146, 151);
+            this.pbProducto.Size = new System.Drawing.Size(110, 123);
             this.pbProducto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbProducto.TabIndex = 25;
             this.pbProducto.TabStop = false;
@@ -256,9 +272,10 @@
             // 
             this.pbEmpleado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(97)))), ((int)(((byte)(112)))));
             this.pbEmpleado.Image = ((System.Drawing.Image)(resources.GetObject("pbEmpleado.Image")));
-            this.pbEmpleado.Location = new System.Drawing.Point(368, 125);
+            this.pbEmpleado.Location = new System.Drawing.Point(276, 102);
+            this.pbEmpleado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbEmpleado.Name = "pbEmpleado";
-            this.pbEmpleado.Size = new System.Drawing.Size(146, 151);
+            this.pbEmpleado.Size = new System.Drawing.Size(110, 123);
             this.pbEmpleado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbEmpleado.TabIndex = 24;
             this.pbEmpleado.TabStop = false;
@@ -268,9 +285,10 @@
             // 
             this.pbCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(97)))), ((int)(((byte)(112)))));
             this.pbCliente.Image = ((System.Drawing.Image)(resources.GetObject("pbCliente.Image")));
-            this.pbCliente.Location = new System.Drawing.Point(152, 125);
+            this.pbCliente.Location = new System.Drawing.Point(114, 102);
+            this.pbCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbCliente.Name = "pbCliente";
-            this.pbCliente.Size = new System.Drawing.Size(146, 151);
+            this.pbCliente.Size = new System.Drawing.Size(110, 123);
             this.pbCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbCliente.TabIndex = 23;
             this.pbCliente.TabStop = false;
@@ -278,18 +296,19 @@
             // 
             // FrmPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1088, 750);
+            this.ClientSize = new System.Drawing.Size(816, 609);
             this.Controls.Add(this.pnContenedor);
             this.Controls.Add(this.pnPrincial);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmPrincipal";
             this.pnPrincial.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCerrarPrinci)).EndInit();
             this.pnContenedor.ResumeLayout(false);
             this.pnContenedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbUsuario)).EndInit();
@@ -308,7 +327,7 @@
         private System.Windows.Forms.Panel pnPrincial;
         private System.Windows.Forms.Panel pnContenedor;
         private System.Windows.Forms.PictureBox pbLogo;
-        private System.Windows.Forms.PictureBox pbCerrar;
+        private System.Windows.Forms.PictureBox pbCerrarPrinci;
         private System.Windows.Forms.Label lbProducto;
         private System.Windows.Forms.Label lbUsuario;
         private System.Windows.Forms.Label lbPuesto;

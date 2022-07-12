@@ -26,22 +26,11 @@ namespace FarmaciaBotiquin.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(local)\\sqlexpress; Initial Catalog=Farmacia_Botiquin; Integrated Sec" +
-            "urity=True;")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-FTIF23G;Initial Catalog=Farmacia_Botiquin;Integrated Security" +
+            "=True")]
         public string conexionFarmacia_Botiquin {
             get {
                 return ((string)(this["conexionFarmacia_Botiquin"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(local)\\sqlexpress;Initial Catalog=Farmacia_Botiquin;Integrated Secur" +
-            "ity=True")]
-        public string Farmacia_BotiquinConnectionString {
-            get {
-                return ((string)(this["Farmacia_BotiquinConnectionString"]));
             }
         }
     }

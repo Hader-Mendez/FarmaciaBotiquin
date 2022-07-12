@@ -148,6 +148,13 @@ namespace FarmaciaBotiquin
             }
         }
 
+        private void pbCerrar_Click(object sender, EventArgs e)
+        {
+            Form formulario = new FrmPrincipal();
+            this.Close();
+            this.Show();
+        }
+
         private void btnEditar_Click(object sender, EventArgs e)
         {
             if (!seleccionActiva)

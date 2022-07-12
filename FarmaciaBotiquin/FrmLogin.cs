@@ -29,7 +29,7 @@ namespace FarmaciaBotiquin
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-        private void pbCerrar_Click(object sender, EventArgs e)
+        private void pbCerrarLogin_Click(object sender, EventArgs e)
         {
             this.Close();
         }
@@ -61,7 +61,9 @@ namespace FarmaciaBotiquin
             }
         }
 
-        
-       
+        private void llbRecuperar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }
